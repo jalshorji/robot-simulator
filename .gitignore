@@ -1,0 +1,24 @@
+# Ignore Maven build output
+target/
+
+# Ignore IntelliJ IDEA project-specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignore logs and temp files
+*.log
+*.out
+*.tmp
+
+# Ignore compiled bytecode and class files
+*.class
+
+# Ignore Maven local repository files
+.mvn/timing.properties
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
