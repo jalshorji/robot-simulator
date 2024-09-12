@@ -20,7 +20,9 @@ public class Main
 
             while ((command = br.readLine()) != null) {
                 String output = simulator.execute(command);
-                System.out.println(output);
+                if (output != null) {
+                    System.out.println(output);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
