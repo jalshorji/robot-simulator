@@ -5,7 +5,7 @@ import org.example.Position;
 
 public class WestMovementStrategy implements MovementStrategy {
     @Override
-    public Position move(Position position) {
-        return new Position(position.x() - 1, position.y(), position.direction());
+    public Position nextPosition(Position currentPosition) {
+        return new Position(currentPosition.x() - 1, currentPosition.y(), currentPosition.direction());
     }
 }

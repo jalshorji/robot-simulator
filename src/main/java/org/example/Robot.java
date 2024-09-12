@@ -5,6 +5,10 @@ public class Robot {
     private Position position;
     private boolean isPlaced;
 
+    public Robot() {
+        position = new Position(0, 0, Direction.NORTH);
+    }
+
     public Position getPosition() {
         return position;
     }
@@ -16,7 +20,7 @@ public class Robot {
     }
 
     public Position getNextPosition() {
-        return position.direction().getMovementStrategy().move(position);
+        return position.direction().getMovementStrategy().nextPosition(position);
     }
 
     public void move(Position nextPosition) {
