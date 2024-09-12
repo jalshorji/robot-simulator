@@ -8,6 +8,10 @@ public class Main
 {
     public static void main( String[] args ) {
 
+        if (args.length != 1) {
+            throw new IllegalArgumentException("Missing input file");
+        }
+
         Simulator simulator = new Simulator(new Table(5,5), new Robot());
 
         run(args, simulator);
