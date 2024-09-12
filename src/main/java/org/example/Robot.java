@@ -16,7 +16,7 @@ public class Robot {
     }
 
     public Position getNextPosition() {
-        return position.direction().getMovementStrategy().move(position);
+        return position.direction().getMovementStrategy().nextPosition(position);
     }
 
     public void move(Position nextPosition) {
